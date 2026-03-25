@@ -1,7 +1,7 @@
 {
   "name": "@dominooffc/dominobail",
-  "version": "10.0.5",
-  "description": "Baileys fix prefer, siap run tanpa install tambahan",
+  "version": "10.0.6",
+  "description": "Baileys bot fix prefer, siap run tanpa error",
   "keywords": [
     "whatsapp",
     "baileys",
