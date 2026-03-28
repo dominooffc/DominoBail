@@ -1,7 +1,7 @@
 {
   "name": "@dominooffc/dominobail",
-  "version": "2.0.0",
-  "description": "WhatsApp Baileys New",
+  "version": "2.0.1",
+  "description": "WhatsApp Baileys New (Fixed & Clean)",
   "keywords": [
     "whatsapp",
     "baileys",
@@ -10,10 +10,10 @@
   "homepage": "https://github.com/dominooffc/dominobail",
   "repository": {
     "type": "git",
-    "url": "https://github.com/dominooffc/Baileys.git"
+    "url": "https://github.com/dominooffc/dominobail.git"
   },
   "bugs": {
-    "url": "https://github.com/domimooffc/dominobail/issues"
+    "url": "https://github.com/dominooffc/dominobail/issues"
   },
   "license": "MIT",
   "author": "DominoOffc",
@@ -21,16 +21,12 @@
   "types": "lib/index.d.ts",
   "files": [
     "lib/*",
-    "WAProto/*.js",
-    "engine-requirements.js"
+    "WAProto/*.js"
   ],
   "scripts": {
     "build": "tsc",
-    "build:docs": "typedoc",
-    "lint": "eslint src --ext .js,.ts,.jsx,.tsx",
-    "lint:fix": "eslint src --fix --ext .js,.ts,.jsx,.tsx",
-    "test": "jest",
-    "preinstall": "node ./engine-requirements.js"
+    "start": "node lib/index.js",
+    "test": "jest"
   },
   "dependencies": {
     "@adiwajshing/keyed-db": "^0.2.4",
@@ -44,7 +40,7 @@
     "futoin-hkdf": "^1.5.1",
     "libphonenumber-js": "^1.10.20",
     "lodash": "^4.17.21",
-    "libsignal": "npm:@adiwajshing/libsignal-node", 
+    "libsignal": "npm:@adiwajshing/libsignal-node",
     "music-metadata": "^7.12.3",
     "node-cache": "^5.1.2",
     "node-fetch": "^2.6.1",
@@ -79,7 +75,6 @@
     "qrcode-terminal": { "optional": true },
     "sharp": { "optional": true }
   },
-  "packageManager": "yarn@1.22.19",
   "engines": {
     "node": ">=20.0.0"
   }
